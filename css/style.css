@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body {
+    width: 1440px;
+   
+} 
+.sec1 {
+    background-image: url(/images/desktop/image-hero.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 10rem;
+
+}
+.hero{
+    padding: 4rem 10rem;
+    
+
+}
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-link ul{
+    display: flex;
+    gap: 2rem;
+}
+.nav-link ul li{
+    list-style: none;
+}
+.nav-link ul li a{
+    font-family: 'Alata', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-link ul li::after{
+    content: '';
+    background: #ffffff;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+.hero h1{
+    margin-top: 9%;
+    margin-left: 3.8%;
+    width: 610px;
+    height: 275px;
+    border: 2.5px solid #ffffff;
+    color: #ffffff;
+    font-size: 70px;
+    font-weight: normal;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 2.5rem;
+}
+/* section 2 css design */
+.sec2 {
+    margin-left: 10rem;
+    display: flex;
+}
+.vr-img{
+ position: absolute;
+ z-index: 10;
+}
+.vr-txt {
+    position: relative;
+    z-index: 11;
+    border: none;
+    background-color: #ffffff;
+    width: 650px;
+    height: 365px;
+    margin-top: 13%;
+    margin-left: 45%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 110px;
+
+}
+.vr-txt h1,P {
+    /* padding-top: 40px; */
+    align-items: center;
+    justify-items: center;
+}
+.vr-txt h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: rgb(49, 49, 49);
+}
+.vr-txt p{
+    color: rgb(150, 150, 164);
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+    line-height: 1.6rem;
+
+}
+/* secection 3 */
+
+.gallery{
+margin: 10rem 10rem;
+} 
+.gal-hd {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 5rem;
+}
+.gal-hd h1{
+    font-weight: 300;
+    font-size: 48px;
+    font-weight: normal;
+    color: rgb(49, 49, 49);
+}
+.gal-hd a{
+    /* margin-right: 65px; */
+    text-decoration: none;
+    border: 1.5px solid black;
+    font-weight: 400;
+    font-size: 15px;
+    
+    color: #000000;
+}
+.btn{
+    
+    padding-top:  17px;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+   
+}
+.gal-hd a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 2.8rem;
+    
+
+}
+.img-col {
+    
+     position:relative;
+     z-index: 10;
+
+}
+.img-col img{
+
+    filter: brightness(75%) contrast(110%);
+}
+.title{
+    position: absolute;
+    z-index: 11;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    margin-top: -100px;
+    margin-left: 35px;
+    color: #ffffff;
+    transition: 0.5S;
+}
+
+/* this part was very challenging for me, spent hours trying  diff thing before getting it */
+.img-col:hover{
+    opacity: 40%;
+    transition: 0.5s;
+    cursor: pointer;
+   
+
+}
+
+.img-col:hover h3{
+    color: #000000;
+    cursor: pointer;
+}
+.footer{
+    background-color: #000000;
+    border: none;
+    padding: 3rem 10rem;
+}
+
+.foot-logo{
+    
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 1rem;
+}
+
+.foot-soc img{
+    padding-left: 20px;
+
+}
+/* had issues here at first i did not use unorderedlist for this and it was just scattered all over */
+.foot-soc ul{
+    display: flex;
+}
+.foot-soc ul li{
+    list-style: none;
+}
+.foot-soc ul li a{
+    text-decoration: none;
+}
+.foot-soc ul li::after{
+    content: '';
+    background: #ffffff;
+    width: 0%;
+    height: 2px;
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+.foot-soc ul li:hover::after{
+    width: 50%;
+
+}
+
+.foot-nav p{
+
+    color: #737373;
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+}
+.foot-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.buttom-nav ul{
+      display: flex;
+      gap: 2rem;
+}
+.buttom-nav ul li a{
+    text-decoration: none;
+    color: #d3d0d0;
+    font-family: 'Alata', sans-serif;
+}
+
+.buttom-nav ul li::after{
+    content: '';
+    background: #ffffff;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.buttom-nav ul li:hover::after{
+    width: 90%;
+}
+
+/* project completed in day 3....10:43pm..... trying to cross check  from the begining */
